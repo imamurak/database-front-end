@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Useful Web Sites</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png?1">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="customize.css" type="text/css">
+  </head>
+
+  <body>
+    <!-- Place menu here -->    
+    <!-- Search button -->
+    <a href="search.html">Search</a>
+    <a href="list.html">List Web Sites</a>
+    <br>
+    <br>
+    <br>
+    <!-- List button -->
+
+    <h1>Useful Web Sites</h1>
+    <h2>
+      Keep track of useful Web sites that you learn about
+    </h2>
+
+    <!-- 
+    To add a new word to the story, copy and paste one of the <label> and <input> pairs. Set "name" attribute of the <input> to a unique number.
+
+    Next, add a <span> to the story below with a "class" attribute
+    that matches the "name" attribute of the input.
+    -->
+    
+    <div class="form">
+      <form>
+        <label>Name of Web Site</label>
+        <input name="word-1" type="text" placeholder="Like 'interesting site'">
+        
+        <label>URL</label>
+        <input name="word-2" type="text" placeholder="Like 'http://interesting_site.com'">
+
+        <label>Brief Description</label>
+        <input name="word-3" type="text" placeholder="Like 'fast' or 'funny'">
+        
+        <label>Tags</label>
+        <input name="word-4" type="text" placeholder="Like 'productivity' or 'utility'">
+        
+        <label>Date Added/Modified</label>
+        <input name="word-5" type="text" placeholder="Like 'mm-dd-yyyy'">
+        
+        <label>Notes</label>
+        <input name="word-6" type="text" placeholder="Free Form">
+      </form>
+      
+      <button onClick="fillBlanks()">Commit to Database</button>
+      <button onClick='resetForm()'>Clear form</button>
+    </div>
+
+    <!-- The story -->
+    <div class="story">
+      <div class="monitor">
+        <div class="screen">
+          <p>
+            <span class="cursor">&gt;</span> 
+            On my way home, I have to pass <span class="word-1"></span> security cameras,
+            so I wear a hoodie that makes me look like a <span class="word-2"></span> to avoid facial recognition.
+            I also set my phone to <span class="word-3"></span> mode to keep it from leaking data.
+          </p>
+          <p>
+            When I have to use my phone, I encrypt all of my messages with <span class="word-4"></span> so no one can read
+            them if they get intercepted. When I go online, I set my browser to <span class="word-5"></span> mode so it doesn't
+            keep track of my browsing history and I never enable <span class="word-6"></span> services so no one can use my phone to track me.
+          </p>
+        </div>
+        <div class="monitor-name">STORY-O-TRON 2000</div>
+        <div class="light"></div>
+      </div>
+      <button onClick='goBack()'>&larr; Go Back</button>
+    </div>
+
+    <div class="license">
+      CC-BY <a href="https://teach.mozilla.org"><img src="images/mozilla-logo.svg" /></a>
+    </div>
+    
+    <script src="scripts/script.js" type="text/javascript"></script>
+  </body>
+</html>
