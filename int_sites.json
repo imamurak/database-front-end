@@ -1,0 +1,8 @@
+{
+  "name" : "Wordle",
+  "url" : "http://www.wordle.net/",
+  "descr" : "Word cloud generator",
+  "tags" : "word cloud",
+  "date" : "06-19-2018",
+  "notes" : "Good for resume keyword analysis"
+}
